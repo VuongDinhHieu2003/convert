@@ -5,12 +5,12 @@
 .h1,
 .h2{
   text-align: center;
-  color: black;
+  color: white;
   /* color: white; */
 }
 
 .fullpage {
-  background-image: url("/img/Universe.gif");
+  background-image: url("img/Universe.gif");
   background-repeat: no-repeat;
   background-size: 100%;
   /* background-color: white; */
