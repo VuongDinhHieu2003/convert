@@ -13,6 +13,8 @@
   background-image: url("img/Universe.gif");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-attachment:fixed ;
+  background-position: center center;
 
   /* background-color: white; */
   margin: 0;
@@ -86,6 +88,19 @@ a:active {
   border-radius: 15px;
 }
 
+.btn-logo {
+  color: black;
+  font-size: 20px;
+  font-family: "Tourney", cursive;
+  font-weight: bold;
+  
+}
+
+.btn-listconvert {
+  border-radius: 15px;
+  box-shadow: 5px 10px;
+}
+
 /* Dropdown */
 
 /* Thiết lập vị trí cho thẻ div với class dropdown*/
@@ -132,17 +147,7 @@ a:active {
 
 /* *** */
 
-.btn-logo {
-  color: black;
-  font-size: 20px;
-  font-family: "Tourney", cursive;
-  font-weight: bold;
-}
 
-.btn-listconvert {
-  border-radius: 15px;
-  box-shadow: 5px 10px;
-}
 
 /* *********** */
 /* LIST ẢNH */
@@ -253,10 +258,10 @@ a:active {
   outline: 0;
 }
 .carousel-control-prev {
-  left: 0;
+  left: 0px;
 }
 .carousel-control-next {
-  right: 0;
+  right: 0px;
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
@@ -332,7 +337,27 @@ a:active {
 
 .img{
   position: relative;
-  width: 450px;
+  width: 400px;
   height: 370px;
-  margin-left: 180px;
+  margin: 0 26%;
+}
+
+@media only screen and (max-width: 800px) {
+  .head{
+    height: auto;
+  }
+  .fullpage{
+    background-size: auto;
+  }
+  .head__navbar-item{
+    margin: auto;
+  }
+  .btn{
+    font-size: 100%;
+  }
+  .img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
 }
