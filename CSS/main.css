@@ -9,7 +9,7 @@
 }
 
 .fullpage {
-  background-image: url("img/Universe.gif");
+  background-image: url("/img/Universe.gif");
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment:fixed ;
