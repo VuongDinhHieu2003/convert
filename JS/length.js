@@ -9,16 +9,18 @@ const swap = document.getElementById('swap');
 // Fetch exchange rates and update the dome
 function calculate() {
   const currency_one = currencyEl_one.value;
-  const currency_two = currencyEl_two.value;
+  const currency_two = currencyEl_two.value; 
 
   fetch(`API/api-Length/${currency_one}.json`)
     .then((res) => res.json())
     .then((data) => {
       //   console.log(data);
       const rate = data.conversion_rates[currency_two];
-      rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}`;
+      rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two} 
+      **chú thích: e-1=10^-1`;
+      
 
-      amountEl_two.value = (amountEl_one.value * rate).toFixed(12);
+      amountEl_two.value = (amountEl_one.value * rate);
     });
 }
 

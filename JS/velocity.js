@@ -16,9 +16,10 @@ function calculate() {
     .then((data) => {
       //   console.log(data);
       const rate = data.conversion_rates[currency_two];
-      rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}`;
+      rateEl.innerText = `1 ${currency_one} = ${rate} ${currency_two}
+      **chú thích: e-1=10^-1`;
 
-      amountEl_two.value = (amountEl_one.value * rate).toFixed(10);
+      amountEl_two.value = (amountEl_one.value * rate);
     });
 }
 
